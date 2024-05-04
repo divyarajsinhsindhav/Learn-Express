@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')%>
+<body>
+    <%- include('./partials/navbar.ejs')%>
+    <div class="product-card">
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <p><%= product.price %></p>
+        <hr>
+    </div>
+    <a href="/product">Back to Product</a>
+</body>
+</html>
