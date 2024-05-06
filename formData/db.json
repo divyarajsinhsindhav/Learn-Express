@@ -6,5 +6,13 @@
         "firstName": "Virajsinh",
         "lastName": "Sindhav",
         "jobTitle": "Sr. Laravel Developer"
+    },
+    {
+        "id": "ed51a39e-ea6f-4ae7-89b7-b8a6816bc86a",
+        "email": "dks@node.js",
+        "password": "$2b$10$n1Zg.OhGMehqKO91/lsMA.SohoFHUtsvcZIC5zxjPVxcQTOACVeMu",
+        "firstName": "Divyrajsinh",
+        "lastName": "Sindhav",
+        "jobTitle": "Data Science"
     }
 ]

@@ -11,10 +11,28 @@
                     <div class="form-group
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control">
+                    <% emailErrorMessage = false %>
+                    <% if(errors.length>0) { %>
+                        <% errors.forEach(error => { %>
+                            <% if (!emailErrorMessage && error.path === 'email') { %>
+                                <div style="color: red;"><%= error.msg %></div>
+                                <% emailErrorMessage=true %>
+                            <% } %>
+                        <% }) %>
+                    <% } %>
                     </div>
                     <div class="form-group>
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" class="form-control">
+                    <% passwordErrorMessage = false %>
+                    <% if(errors.length>0) { %>
+                        <% errors.forEach(error => { %>
+                            <% if (!emailErrorMessage && error.path === 'password') { %>
+                                <div style="color: red;"><%= error.msg %></div>
+                                <% passwordErrorMessage=true %>
+                            <% } %>
+                        <% }) %>
+                    <% } %>
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
