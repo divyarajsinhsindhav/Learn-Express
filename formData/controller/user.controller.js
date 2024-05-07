@@ -73,7 +73,8 @@ exports.profile = (req, res) => {
     if (!userData) {
       return res.status(404).json({ message: 'User not found' });
     }
-    res.render('profile', { userData, userId: req.userId } )
+
+    res.render('profile', { userData, userId: req.userId })
   };
 
 exports.logut = (req, res) => {
