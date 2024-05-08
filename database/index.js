@@ -14,8 +14,6 @@ app.use(cookieParser())
 app.use('/', router);
 app.use(cors());
 
-app.set('view engine', 'ejs')
-
 mongoose
     .connect('mongodb://localhost:27017/databaseProject')
     .then(() => console.log("MongoDB connected"))
