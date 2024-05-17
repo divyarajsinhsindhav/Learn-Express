@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
     const userAgent = req.headers['user-agent'];
     const uaResult = parser.setUA(userAgent).getResult();
     console.log(uaResult)
-
 })
 
 app.listen(PORT, () => {
